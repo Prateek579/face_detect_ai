@@ -1,0 +1,165 @@
+.scann_container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./facerecognition.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.scann_options {
+    height: 60%;
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scann_content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scann_camera{
+    width: 100%;
+    height: 90%;
+}
+
+.scann_video{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+    background-color: #4062bb;
+    background-image: linear-gradient(316deg, #4062bb 0%, #5200ae 74%);
+    padding: 5px;
+}
+
+.scann_camera>img {
+    height: 90%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #4062bb;
+    background-image: linear-gradient(316deg, #4062bb 0%, #5200ae 74%);
+    padding: 5px;
+}
+
+.scann_btn>button {
+    background-color: #4062bb;
+    background-image: linear-gradient(316deg, #4062bb 0%, #5200ae 74%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+}
+
+.scann_details {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(316deg, #4062bb 0%, #5200ae 74%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scann_data {
+    height: 100%;
+    width: 100%;
+}
+
+.scann_details_info {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scann_no_user{
+    color: white;
+    font-size: 23px;
+}
+
+.scann_data>p {
+    width: 100%;
+    color: white;
+    font-size: 23px;
+}
+
+.scann_details_button>button {
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px){
+    .scann_options {
+        height: 65%;
+        width: 55%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:700px){
+    .scann_options{
+        width: 90%;
+    }
+
+    .scann_camera{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px){
+
+    .scann_options {
+        height: 53%;
+        width: 95%;
+        padding: 5px;
+    }
+
+    .scann_video{
+        max-height: 100%;
+        width: 98%;
+        border-radius: 20px;
+    }
+    
+    .scann_btn>button {
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        margin-top: 10px;
+    }
+    
+    .scann_details_info {
+        width: 90%;
+    }
+    
+    .scann_details_button>button {
+        font-size: 20px;
+        padding: 7px 15px;
+    }
+
+}
